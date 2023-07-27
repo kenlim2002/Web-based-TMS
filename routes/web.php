@@ -8,9 +8,9 @@ Route::get('/', function () {
 })->name('home');
 // Route to the dashboard
 // ,'role:admin'
-Route::get('/collection', function () {
-    return view('welcome');
-})->name('home');
+
+
+//pag Authorized ha dashboard
 Route::middleware('auth')->group(function(){
     Route::get('/admin/dashboard',[DashboardController::class,'AdminDashboard'])->name('dashboard');
     Route::get('/admin/collection',[DashboardController::class,'collection'])->name('collection');
@@ -25,6 +25,7 @@ Route::middleware('auth')->group(function(){
     Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
     Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 });
+//Login ngadi
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
 Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
 Route::get('/registration', [AuthManager::class, 'registration'])->name('registration');
