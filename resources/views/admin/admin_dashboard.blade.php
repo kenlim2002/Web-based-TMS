@@ -5,6 +5,7 @@
       @include('include.sidebar')
       <div class="content ">
         <h1> Dashboard</h1>
+        <h1> hello world</h1>
         @include('include.chart')
         <div class="row">
           <div class="col-md-3">
