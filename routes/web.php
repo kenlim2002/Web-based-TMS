@@ -6,8 +6,7 @@ use App\Http\Controllers\DashboardController;
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
-// Route to the dashboard
-// ,'role:admin'
+
 Route::get('/collection', function () {
     return view('welcome');
 })->name('home');
