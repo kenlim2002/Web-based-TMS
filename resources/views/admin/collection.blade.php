@@ -6,17 +6,11 @@
 <div class="content">
 
 
+
+    
+
+
 </div>
-
-
-
-
-
-
-
-
-
-
 @endauth
 @endsection
 

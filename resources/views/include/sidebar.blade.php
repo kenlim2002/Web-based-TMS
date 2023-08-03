@@ -1,7 +1,5 @@
-
 <div class="sidebar ">
     <ul>
-        
       <li > <a href="{{ route('dashboard') }}" class="bi bi-bar-chart-line {{ request()->routeIs('dashboard') ? 'active' : '' }}"> &nbsp;Dashboard</a></li>
       <li><a href="{{ route('users.index') }}"class=" bi bi-file-person {{ request()->routeIs('users.index') ? 'active' : '' }}" > &nbsp;User Client</a></li>
       <li><a href="{{ route('collection') }}"class="bi bi-collection {{ request()->routeIs('collection') ? 'active' : '' }}" > &nbsp;Collection</a></li>
